@@ -5,4 +5,4 @@ Fzf-Directory-History extension for [Fuzzy-Explorer-on-Terminal](https://github.
 
 ## Installation
 1. Move `dir_history/` to `~/.fet/plugins`
-1. Set keybind by editing `~/.fet/condfig-zsh``~/.fet/config-bash`
+1. Set keybind by editing `~/.fet/condfig-zsh`, `~/.fet/config-bash`
