@@ -1,0 +1,7 @@
+# settings
+shell:zsh
+shell:bash
+type:keybind
+
+# setfunc
+setfunc:dir_history/dir_history:execute(echo 1 >| ~/.fet/.status/.dir_history_dir_history.status)+abort
