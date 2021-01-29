@@ -6,11 +6,10 @@ if [ -f "$HOME/.chpwd-recent-dirs" ]; then
     | while read line
   do
     if [ -d "$line" ]; then
-      dirs=$(echo "\$'$line'")"\n"$dirs
+      dirs=$dirs"\n"$(echo "\$'$line'")
     fi
   done
   dirs=$(echo $dirs | grep -v '^$')
   echo $dirs >| ~/.chpwd-recent-dirs
-else
-  echo '~/.chpwd-recent-dirs do not exists.'
+  echo "$dirs" | sed -e 's/^..\(.*\)./\1/g' | sed 's:^'"$HOME"':~:1'
 fi
