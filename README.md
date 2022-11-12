@@ -7,4 +7,4 @@ Show history of directory moving on `fzf`.
 
 ## Installation
 1. Move `dir_history/` to `~/.fet/plugins`
-1. Set keybind by editing `~/.fet/condfig-zsh`, `~/.fet/config-bash`
+1. Set keybind by editing `~/.fet/condfig-zsh`, `~/.fet/config-bash` (Recommend: `bindkey:alt-h:dir_historydir_history`)
